@@ -19,10 +19,21 @@ public class Bicicleta {
         int sum2 = 0;
         int sum3 = 0;
         
+        /** Habia que dividir el for ya que solo recorria el tamaño del
+         * camino 1, y entonces si los otros caminos contenian mas valores
+         * pues no se les sumaban, de esta manera ya funciona perfectamente
+         */
+        
         for(int i=0; i<camino1.length; i++)
         {
             sum1 += camino1[i];
+        }
+        for(int i=0; i<camino2.length; i++)
+        {
             sum2 += camino2[i];
+        }
+        for(int i=0; i<camino3.length; i++)
+        {
             sum3 += camino3[i];
         }
         
